@@ -15,7 +15,11 @@ public class Contador {
         contar(primeiroParametro, segundoParametro);
     }
 
-    public static void contar(int primeiroNumero, int segundoNumero) {
+    public static void contar(int primeiroNumero, int segundoNumero) throws ParametrosInvalidosException {
+        if(primeiroNumero > segundoNumero) {
+            throw new ParametrosInvalidosException();
+        }
+
         int contagem = segundoNumero - primeiroNumero;
 
         for(int i = 1; i <= contagem; i++) {
