@@ -20,7 +20,7 @@ public class Contador {
     }
 
     public static void contar(int primeiroNumero, int segundoNumero) throws ParametrosInvalidosException {
-        if(primeiroNumero > segundoNumero) {
+        if(primeiroNumero >= segundoNumero) {
             throw new ParametrosInvalidosException();
         }
 
