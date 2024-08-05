@@ -9,5 +9,15 @@ public class Contador {
 
         System.out.println("Digite o segundo parâmetro: ");
         int segundoParametro = scanner.nextInt();
+
+        contar(primeiroParametro, segundoParametro);
+    }
+
+    public static void contar(int primeiroNumero, int segundoNumero) {
+        int contagem = segundoNumero - primeiroNumero;
+
+        for(int i = 1; i <= contagem; i++) {
+            System.out.println("Imprimindo o número " + i);
+        }
     }
 }
